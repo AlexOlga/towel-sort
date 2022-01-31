@@ -3,7 +3,8 @@
 
 module.exports = function towelSort (matrix) {
   let newArr=[];
- 
+ if ( matrix==[]) {return []}
+ else{
   for (let i=0; i<matrix.length; i++){
       matrix[i].sort((a, b) => a - b );
         if (i%2 != 0){
@@ -12,5 +13,5 @@ module.exports = function towelSort (matrix) {
     }
   }
   matrix.forEach(item => { newArr=newArr.concat(item);});
-  return newArr;
+  return newArr;}
 }
