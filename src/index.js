@@ -2,6 +2,8 @@
 // You should implement your task here.
 
 module.exports = function towelSort (matrix) {
+  if ( arguments.length==0){return []}
+  else{
   let newArr=[];
  if ( matrix==[]) {return []}
  else{
@@ -14,4 +16,5 @@ module.exports = function towelSort (matrix) {
   }
   matrix.forEach(item => { newArr=newArr.concat(item);});
   return newArr;}
+}
 }
